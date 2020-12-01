@@ -58,13 +58,11 @@ class cuckoo:
             jnest = randint(0,len(self.nests)) #nest chosen by cuckoo
             
             if(Fcuckoo > self.nests[jnest][1]):
-#                 print("REPLACED    ",[cuckoo, Fcuckoo],"     ", self.nests[jnest])
                 self.nests[jnest] = [cuckoo, Fcuckoo] #replace new solution
                 
 
             self.nests.sort(key=lambda val: val[1], reverse=True) #best solutions at start of list
             self.nests = self.abandonWorst(self.nests)
-#             print(self.nests)
             self.nests.sort(key=lambda val: val[1], reverse=True)
             
         return self.nests   

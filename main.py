@@ -1,4 +1,4 @@
-# cuckoo algorithm
+# Cuckoo Search Algorithm
 import CuckooSearch
 import matplotlib.pyplot as plt
 
