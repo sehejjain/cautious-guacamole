@@ -1,5 +1,5 @@
 # cuckoo algorithm
-import Algorithm
+import CuckooSearch
 import matplotlib.pyplot as plt
 
 def meanPoint(x,val):
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     iterNumb = 100
     
 
-    CS  = Algorithm.cuckoo(n, Pa, iterNumb)
+    CS  = CuckooSearch.cuckoo(n, Pa, iterNumb)
     #print(CS.LevyFlight([4, -2]))
     nests = CS.run()
      
@@ -29,8 +29,5 @@ if __name__ == '__main__':
     plt.plot(x,y, 'bo')
     plt.show()
  
-    #print 1-Pa of all nests, without abandoned ones
-    plt.plot(x[0:-25],y[0:-25], 'bo')
-    plt.show()
 
     pass
